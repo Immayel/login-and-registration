@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title> Login & Registration form </title>
+<link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+<di class ="hero">
+    <div  class="from-box">
+<div class="button-box">
+    <div id = "btn"></div>
+    <button type="button" class="toggle-btn" onclick="login()"> Log In </button>
+    <button type="button" class="toggle-btn" onclick="Registr()"> Registr </button>
+</div>
+<div class="social-icons">
+    <img src="C:\Users\immay\Downloads\icons8-twitter-48.png" >
+    <img src="C:\Users\immay\Downloads\icons8-google-40.png">
+    <img src="C:\Users\immay\Downloads\icons8-instagram-48.png">
+</div>
+    
+    <form  id="login" class="input-groub" >
+        <input type="text" class="input-field" placeholder="User Name" required name="username">
+        <input type="text" class="input-field" placeholder="Enter Password" required name="password">
+   <input type="checkbox" class="chech-box"><span>Remmber Password</span>
+   <button type="submit" class="submit-btn">Log in </button>
+   
+   
+    </form>
+    <form  id="Registr"   class="input-groub" >
+       
+        <input type="text" class="input-field" placeholder="User name" required name="username">
+       <input type="email" class="input-field" placeholder="Email Id" required name="useremail">
+        <input type="text" class="input-field" placeholder="Enter Password" required name="password">
+   <input type="checkbox" class="chech-box"><span>I agree to the terms & coditions</span>
+   <button type="submit" class="submit-btn">Registr</button>
+   
+   
+    </form>
+</div>
+</di>
+<script>
+    var x=document.getElementById("login");
+    var y=document.getElementById("Registr");
+    var z =document.getElementById("btn");
+    function Registr(){
+        x.style.left="-400px";
+        y.style.left="50px";
+        z.style.left="110px";
+    }
+    function login(){
+        x.style.left="50px";
+        y.style.left="450px";
+        z.style.left="0";
+    }
+</script>
+    </body>
+</html>
